@@ -1,5 +1,6 @@
 import Button from '../ui/Button'
 import { CTA_FINAL } from '@/app/lib/constants'
+import WaitlistForm from './WaitlistForm'
 
 export default function CTA() {
   return (
@@ -8,12 +9,10 @@ export default function CTA() {
         <h2 className="text-4xl font-bold text-white mb-4">
           {CTA_FINAL.headline}
         </h2>
-        <p className="text-lg text-white/90 mb-8">
+        <p className="text-lg text-white/90 mb-12">
           {CTA_FINAL.subheadline}
         </p>
-        <Button variant="secondary" size="lg" className="bg-white text-primary hover:bg-gray-100">
-          {CTA_FINAL.cta}
-        </Button>
+        <WaitlistForm />
       </div>
     </section>
   )
