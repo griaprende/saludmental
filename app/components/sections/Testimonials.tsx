@@ -13,7 +13,7 @@ export default function Testimonials() {
           {TESTIMONIALS.map((testimonial, index) => (
             <div key={index} className="bg-white p-6 rounded-lg">
               <p className="text-base italic text-text-secondary mb-4">
-                "{testimonial.text}"
+                &quot;{testimonial.text}&quot;
               </p>
               <div>
                 <p className="text-sm font-bold text-text-primary">
